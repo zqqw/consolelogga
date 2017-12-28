@@ -1,0 +1,170 @@
+# English translations for consolelogga package.
+# Copyright (C) 2017 THE consolelogga'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the consolelogga package.
+# Automatically generated, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: consolelogga 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-12-18 02:36+0000\n"
+"PO-Revision-Date: 2017-09-20 01:57+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.3\n"
+
+#: consolelogga.c:111
+msgid ""
+"consolelogga : logs messages from the console at boot or shutdown\n"
+"\n"
+"\n"
+"Default values, # consolelogga (with no options) :\n"
+"Fork to background, no pidfile, console(s) found in /proc/consoles,\n"
+"log to /var/log/consolelogga.log (if it exists)\n"
+"Examples of use:\n"
+"# consolelogga -xp  :  foreground with default pidfile\n"
+"# consolelogga --pidpath=/new/path  :  custom pidfile location\n"
+"# consolelogga -o /new/path  :  custom logfile location\n"
+"# consolelogga -c\"/dev/tty1 /dev/tty2\"  :  write to tty1 & 2\n"
+msgstr ""
+
+#: consolelogga.c:122
+msgid "consolearg"
+msgstr ""
+
+#: consolelogga.c:122
+msgid "Write to custom console(s)"
+msgstr ""
+
+#: consolelogga.c:123
+msgid "Run as a foreground process, don't fork"
+msgstr ""
+
+#: consolelogga.c:124
+msgid "Write a pidfile to default location"
+msgstr ""
+
+#: consolelogga.c:125
+msgid "Log messages without a timestamp"
+msgstr ""
+
+#: consolelogga.c:126
+msgid "/path/to/pid"
+msgstr ""
+
+#: consolelogga.c:126
+msgid "Define pidfile location"
+msgstr ""
+
+#: consolelogga.c:127
+msgid "/path/to/log"
+msgstr ""
+
+#: consolelogga.c:127
+msgid "Define log file location"
+msgstr ""
+
+#: consolelogga.c:314
+msgid "sigaction failure at cleanup"
+msgstr ""
+
+#: consolelogga.c:326
+msgid "xmalloc virtual memory exhausted"
+msgstr ""
+
+#: consolelogga.c:339
+msgid "xrealloc virtual memory exhausted"
+msgstr ""
+
+#: consolelogga.c:359
+msgid "fopen failed to open log_file"
+msgstr ""
+
+#: consolelogga.c:404
+msgid "pidfile unlink failed in cleanup"
+msgstr ""
+
+#: consolelogga.c:413
+msgid "rmdir failed in cleanup"
+msgstr ""
+
+#: consolelogga.c:425
+msgid "Fatal signal not fatal - terminating"
+msgstr ""
+
+#: consolelogga.c:471
+msgid "Fork failed"
+msgstr ""
+
+#: consolelogga.c:481
+msgid "setsid failed"
+msgstr ""
+
+#: consolelogga.c:489
+msgid "Second fork failed"
+msgstr ""
+
+#: consolelogga.c:496
+msgid "chdir failed"
+msgstr ""
+
+#: consolelogga.c:542
+msgid "Can't open pty - terminal failure"
+msgstr ""
+
+#: consolelogga.c:550
+msgid "Can't get console output, consolelogga already running?"
+msgstr ""
+
+#: consolelogga.c:555
+msgid "Error redirecting console output to pty slave"
+msgstr ""
+
+#: consolelogga.c:699
+msgid "fopen failed to open pid file"
+msgstr ""
+
+#: consolelogga.c:765
+msgid "Root isn't a directory"
+msgstr ""
+
+#: consolelogga.c:792
+msgid "Path includes non-directory element"
+msgstr ""
+
+#: consolelogga.c:802
+msgid "mkdir - failed to create directory"
+msgstr ""
+
+#: consolelogga.c:868
+msgid "fopen failed to open /proc/consoles"
+msgstr ""
+
+#: consolelogga.c:894
+msgid "No consoles found in /proc/consoles"
+msgstr ""
+
+#: consolelogga.c:1002
+msgid "Unable to open output tty"
+msgstr ""
+
+#: consolelogga.c:1010
+msgid "fcntl F_GETFL failed"
+msgstr ""
+
+#: consolelogga.c:1019
+msgid "fcntl F_SETFL failed"
+msgstr ""
+
+#: consolelogga.c:1047
+msgid "time returned -1"
+msgstr ""
+
+#: consolelogga.c:1052
+msgid "localtime returned NULL"
+msgstr ""

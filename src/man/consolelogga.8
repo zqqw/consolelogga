@@ -1,0 +1,94 @@
+.TH consolelogga 8
+.SH NAME
+consolelogga \- log messages from the console at boot and shutdown
+.SH SYNOPSIS
+.B consolelogga
+[\fB\-c \-\-console=\fR\fIconsolearg\fR]
+[\fB\-e \-\-exact\fR]
+[\fB\-o \-\-output=\fR\fI/path/to/log\fR]
+.br
+[\fB\-p \-\-pidfile\fR]
+[\fB\-P \-\-pidpath=\fR\fI/path/to/pid\fR]
+[\fB\-x \-\-nofork\fR]
+.br
+[\fB\-? \-\-help\fR]
+[\fB\-\-usage\fR]
+[\fB\-V \-\-version\fR]
+.SH DESCRIPTION
+.B consolelogga
+Records information shown on the console.
+.br
+Logs will be written when the log file is available.
+.br
+Otherwise messages are temporarily stored in RAM.
+.br
+.SH OPTIONS
+.TP
+.B \-c \-\-console=consolearg
+Write to user defined console(s)
+.TP
+.B \-e \-\-exact
+Log messages without a timestamp
+.TP
+.B \-o \-\-output=/path/to/logfile
+Write to user defined log file location
+.TP
+.B \-p \-\-pidfile
+Write a pidfile to the default location
+.TP
+.B \-P \-\-pidpath=/path/to/pid
+Write a pidfile to a user defined location
+.TP
+.B \-x \-\-nofork
+Run as a foreground process, don't fork to the background
+.TP
+.B \-? \-\-help
+Print an onscreen help message
+.TP
+.B \-\-usage
+Give a short usage message
+.TP
+.B \-V \-\-version
+Print program version
+.SH FILES
+.TP
+.B Default log file :
+.I /var/log/consolelogga.log
+.TP
+.B Default pid file :
+.I /run/consolelogga/consolelogga_pidfile.pid
+.SH BUGS
+CXperimental <www.cxperimental.weebly.com>
+https://github.com/zqqw/consolelogga
+.SH EXAMPLE
+.TP
+.B consolelogga
+Default settings, no arguments given.
+.br
+Fork to background, no pidfile, console(s) found in /proc/consoles.
+.br
+Log to /var/log/consolelogga.log (if it exists) with timestamp.
+.TP
+.B consolelogga \-xp
+Run as foreground process, with default pidfile.
+.TP
+.B consolelogga \-\-pidpath=\fI/new/path\fR
+User defined pidfile location.
+.TP
+.B consolelogga \-o \fI/new/path\fR
+User defined log file location
+.TP
+.B consolelogga \-c\fI"/dev/tty1 /dev/tty2"\fR
+Write to tty1 and tty2. Data written to /dev/console is intercepted by
+consolelogga. It then must be redirected to the display tty, usually
+tty1. This tty is often called the console, but it isn't
+/dev/console. consolelogga should detect the console(s) from
+/proc/consoles. This option allows any console(s) to be manually
+defined if needed.
+.TP
+.B consolelogga \-e
+Don't add the date and time to the start of each logged line.
+.TP
+.B less -R or more consolelogga.log
+Interpret escape codes for color and bold text display.
+.TP

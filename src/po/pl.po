@@ -1,0 +1,184 @@
+# Polish translations for consolelogga package.
+# Copyright (C) 2017 THE consolelogga'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the consolelogga package.
+# Automatically generated, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: consolelogga 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-12-18 02:36+0000\n"
+"PO-Revision-Date: 2017-12-18 13:45+0000\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 2.0.4\n"
+
+#: consolelogga.c:111
+msgid ""
+"consolelogga : logs messages from the console at boot or shutdown\n"
+"\n"
+"\n"
+"Default values, # consolelogga (with no options) :\n"
+"Fork to background, no pidfile, console(s) found in /proc/consoles,\n"
+"log to /var/log/consolelogga.log (if it exists)\n"
+"Examples of use:\n"
+"# consolelogga -xp  :  foreground with default pidfile\n"
+"# consolelogga --pidpath=/new/path  :  custom pidfile location\n"
+"# consolelogga -o /new/path  :  custom logfile location\n"
+"# consolelogga -c\"/dev/tty1 /dev/tty2\"  :  write to tty1 & 2\n"
+msgstr ""
+"consolelogga : zapisuje komunikaty z konsoli podczas uruchamiania lub "
+"zamykania\n"
+"\n"
+"\n"
+"Wartości domyślne, # consolelogga (bez opcji):\n"
+"Widelec do tła, nie ma PID-plik, konsola(y) znaleźć się w /proc/consoles,\n"
+"logi w /var/log/consolelogga.log (jeśli istnieje)\n"
+"Przykłady użycia:\n"
+"# consolelogga -xp  :  zdjęcia z PID-domyślny plik\n"
+"# consolelogga --pidpath=/nowy/sposób :  urząd celny PID lokalizacja pliku\n"
+"# consolelogga -o /nowy/sposób :  Niestandardowa lokalizacja pliku "
+"dziennika\n"
+"# consolelogga -c\"/dev/tty1 /dev/tty2\"  :  napisz tty1 & 2\n"
+
+#: consolelogga.c:122
+msgid "consolearg"
+msgstr "argumenty konsoli"
+
+#: consolelogga.c:122
+msgid "Write to custom console(s)"
+msgstr "Napisz niestandardową konsolę(y)"
+
+#: consolelogga.c:123
+msgid "Run as a foreground process, don't fork"
+msgstr "Działa jako zwykły proces, nie wtyczka"
+
+#: consolelogga.c:124
+msgid "Write a pidfile to default location"
+msgstr "Napisz PID-plik w folderze domyślnym"
+
+#: consolelogga.c:125
+msgid "Log messages without a timestamp"
+msgstr "Wiadomości dziennika bez etykiety"
+
+#: consolelogga.c:126
+msgid "/path/to/pid"
+msgstr "/ścieżka/do/PID"
+
+#: consolelogga.c:126
+msgid "Define pidfile location"
+msgstr "Określić PID lokalizacja pliku"
+
+#: consolelogga.c:127
+msgid "/path/to/log"
+msgstr "/ścieżka/do/magazyn"
+
+#: consolelogga.c:127
+msgid "Define log file location"
+msgstr "Określ lokalizację pliku dziennika"
+
+#: consolelogga.c:314
+msgid "sigaction failure at cleanup"
+msgstr "odmowa sigaction w sprzątaniu"
+
+#: consolelogga.c:326
+msgid "xmalloc virtual memory exhausted"
+msgstr "wirtualny xmalloc pamięć wyczerpany"
+
+#: consolelogga.c:339
+msgid "xrealloc virtual memory exhausted"
+msgstr "wirtualny xrealloc pamięć wyczerpany"
+
+#: consolelogga.c:359
+msgid "fopen failed to open log_file"
+msgstr "funkcje fopen nie udało się otworzyć log_file"
+
+#: consolelogga.c:404
+msgid "pidfile unlink failed in cleanup"
+msgstr "błąd : PID-plik unlink sprzątanie nie działało"
+
+#: consolelogga.c:413
+msgid "rmdir failed in cleanup"
+msgstr "funkcje rmdir nie powiodło się podczas czyszczenia"
+
+#: consolelogga.c:425
+msgid "Fatal signal not fatal - terminating"
+msgstr "Fatalny sygnał nie śmiertelnie - zakończenia"
+
+#: consolelogga.c:471
+msgid "Fork failed"
+msgstr "Widelec nieudany"
+
+#: consolelogga.c:481
+msgid "setsid failed"
+msgstr "funkcje setsid nieudany"
+
+#: consolelogga.c:489
+msgid "Second fork failed"
+msgstr "Drugie widelec nie powiodło się"
+
+#: consolelogga.c:496
+msgid "chdir failed"
+msgstr "funkcje chdir nieudany"
+
+#: consolelogga.c:542
+msgid "Can't open pty - terminal failure"
+msgstr "Nie mogę otworzyć pty - awaria terminala"
+
+#: consolelogga.c:550
+msgid "Can't get console output, consolelogga already running?"
+msgstr "Nie mogę odczytać wyjście na konsolę, consolelogga już działa?"
+
+#: consolelogga.c:555
+msgid "Error redirecting console output to pty slave"
+msgstr "Błąd przekierowania wyjścia konsoli w pty niewolnik"
+
+#: consolelogga.c:699
+msgid "fopen failed to open pid file"
+msgstr "funkcje fopen nie można otworzyć plik PID"
+
+#: consolelogga.c:765
+msgid "Root isn't a directory"
+msgstr "Korzeń nie jest katalogiem"
+
+#: consolelogga.c:792
+msgid "Path includes non-directory element"
+msgstr "Ścieżka zawiera element, który nie jest katalogiem"
+
+#: consolelogga.c:802
+msgid "mkdir - failed to create directory"
+msgstr "funkcje mkdir - nie udało się utworzyć katalogu"
+
+#: consolelogga.c:868
+msgid "fopen failed to open /proc/consoles"
+msgstr "funkcje fopen nie otwiera /proc/consoles"
+
+#: consolelogga.c:894
+msgid "No consoles found in /proc/consoles"
+msgstr "Żadna konsola nie znaleźć się w /proc/consoles"
+
+#: consolelogga.c:1002
+msgid "Unable to open output tty"
+msgstr "Nie można otworzyć wyjściowy tty"
+
+#: consolelogga.c:1010
+msgid "fcntl F_GETFL failed"
+msgstr "fcntl F_GETFL nieudany"
+
+#: consolelogga.c:1019
+msgid "fcntl F_SETFL failed"
+msgstr "fcntl F_SETFL nieudany"
+
+#: consolelogga.c:1047
+msgid "time returned -1"
+msgstr "time zwraca wartość -1"
+
+#: consolelogga.c:1052
+msgid "localtime returned NULL"
+msgstr "localtime zwraca wartość NULL"

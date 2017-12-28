@@ -1,0 +1,184 @@
+# Russian translations for consolelogga package.
+# Copyright (C) 2017 THE consolelogga'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the consolelogga package.
+# Automatically generated, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: consolelogga 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-12-18 02:36+0000\n"
+"PO-Revision-Date: 2017-12-18 13:51+0000\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 2.0.4\n"
+
+#: consolelogga.c:111
+msgid ""
+"consolelogga : logs messages from the console at boot or shutdown\n"
+"\n"
+"\n"
+"Default values, # consolelogga (with no options) :\n"
+"Fork to background, no pidfile, console(s) found in /proc/consoles,\n"
+"log to /var/log/consolelogga.log (if it exists)\n"
+"Examples of use:\n"
+"# consolelogga -xp  :  foreground with default pidfile\n"
+"# consolelogga --pidpath=/new/path  :  custom pidfile location\n"
+"# consolelogga -o /new/path  :  custom logfile location\n"
+"# consolelogga -c\"/dev/tty1 /dev/tty2\"  :  write to tty1 & 2\n"
+msgstr ""
+"consolelogga : записывает сообщения из консоли при загрузке или завершении "
+"работы\n"
+"\n"
+"\n"
+"Значение по умолчанию, # consolelogga (без вариантов) :\n"
+"Вилка для фона, нет файлом PID, консоль(ы) найти в /proc/consoles,\n"
+"лог в /var/log/consolelogga.log (если он существует)\n"
+"Пример использования:\n"
+"# consolelogga -xp  :  передний план с файлом PID по умолчанию\n"
+"# consolelogga --pidpath=/new/path  :  пользовательское расположение файлом "
+"PID\n"
+"# consolelogga -o /new/path  :  пользовательское расположение файла лог\n"
+"# consolelogga -c\"/dev/tty1 /dev/tty2\"  :  написать в tty1 & 2\n"
+
+#: consolelogga.c:122
+msgid "consolearg"
+msgstr "аргументы консоли"
+
+#: consolelogga.c:122
+msgid "Write to custom console(s)"
+msgstr "Запись в пользовательскую консоль или консоли"
+
+#: consolelogga.c:123
+msgid "Run as a foreground process, don't fork"
+msgstr "Запуск как процесс переднего плана, не вилки"
+
+#: consolelogga.c:124
+msgid "Write a pidfile to default location"
+msgstr "Написать PID-файл в папку по умолчанию"
+
+#: consolelogga.c:125
+msgid "Log messages without a timestamp"
+msgstr "Сообщения журнала без метки времени"
+
+#: consolelogga.c:126
+msgid "/path/to/pid"
+msgstr "/путь/к/PID"
+
+#: consolelogga.c:126
+msgid "Define pidfile location"
+msgstr "Определение расположения файла PID"
+
+#: consolelogga.c:127
+msgid "/path/to/log"
+msgstr "/путь/к/лог"
+
+#: consolelogga.c:127
+msgid "Define log file location"
+msgstr "Определение расположения файла лог"
+
+#: consolelogga.c:314
+msgid "sigaction failure at cleanup"
+msgstr "отказ в sigaction в уборке"
+
+#: consolelogga.c:326
+msgid "xmalloc virtual memory exhausted"
+msgstr "xmalloc виртуальная память исчерпана"
+
+#: consolelogga.c:339
+msgid "xrealloc virtual memory exhausted"
+msgstr "xrealloc виртуальная память исчерпана"
+
+#: consolelogga.c:359
+msgid "fopen failed to open log_file"
+msgstr "fopen не удалось открыть log_file"
+
+#: consolelogga.c:404
+msgid "pidfile unlink failed in cleanup"
+msgstr "unlink файла PID не удалось очистить"
+
+#: consolelogga.c:413
+msgid "rmdir failed in cleanup"
+msgstr "rmdir не удалось очистить"
+
+#: consolelogga.c:425
+msgid "Fatal signal not fatal - terminating"
+msgstr "Фатальный сигнал не смертельный - прекращается"
+
+#: consolelogga.c:471
+msgid "Fork failed"
+msgstr "Вилка не удалась"
+
+#: consolelogga.c:481
+msgid "setsid failed"
+msgstr "setsid не удалась"
+
+#: consolelogga.c:489
+msgid "Second fork failed"
+msgstr "Вторая вилка не удалась"
+
+#: consolelogga.c:496
+msgid "chdir failed"
+msgstr "chdir не удалась"
+
+#: consolelogga.c:542
+msgid "Can't open pty - terminal failure"
+msgstr "Не удается открыть pty - терминал сбой"
+
+#: consolelogga.c:550
+msgid "Can't get console output, consolelogga already running?"
+msgstr "Не удается получить консольный выход, consolelogga уже запущена?"
+
+#: consolelogga.c:555
+msgid "Error redirecting console output to pty slave"
+msgstr "Ошибка перенаправления выхода консоли в ведомое устройство Pty"
+
+#: consolelogga.c:699
+msgid "fopen failed to open pid file"
+msgstr "fopen не удалось открыть файл PID"
+
+#: consolelogga.c:765
+msgid "Root isn't a directory"
+msgstr "Корень не каталог"
+
+#: consolelogga.c:792
+msgid "Path includes non-directory element"
+msgstr "Путь включает элемент, не относящийся к каталогу"
+
+#: consolelogga.c:802
+msgid "mkdir - failed to create directory"
+msgstr "mkdir-не удалось создать каталог"
+
+#: consolelogga.c:868
+msgid "fopen failed to open /proc/consoles"
+msgstr "fopen не удалось открыть /proc/consoles"
+
+#: consolelogga.c:894
+msgid "No consoles found in /proc/consoles"
+msgstr "Консолей не найдено в /proc/consoles"
+
+#: consolelogga.c:1002
+msgid "Unable to open output tty"
+msgstr "Не удалось открыть выходной телетайп"
+
+#: consolelogga.c:1010
+msgid "fcntl F_GETFL failed"
+msgstr "fcntl F_GETFL не удалась"
+
+#: consolelogga.c:1019
+msgid "fcntl F_SETFL failed"
+msgstr "fcntl F_SETFL не удалась"
+
+#: consolelogga.c:1047
+msgid "time returned -1"
+msgstr "time возвращает значение -1"
+
+#: consolelogga.c:1052
+msgid "localtime returned NULL"
+msgstr "localtime возвращает значение NULL"

@@ -1,0 +1,10 @@
+# src/po/SConscript
+Import('env')
+env['XGETTEXTFLAGS'] = [
+  '--package-name=%s' % 'consolelogga',
+  '--package-version=%s' % '1.0.0',
+  '-k_',
+  '-kN_',
+]
+env.Translate(LINGUAS_FILE=1, XGETTEXTFROM='POTFILES.in', XGETTEXTPATH=['../'])
+env.MOFiles(LINGUAS_FILE = 1)

@@ -1,0 +1,14 @@
+#!/usr/bin/openrc-run
+
+	command="/usr/local/bin/consolelogga"
+	command_args="-ep"
+	pidfile="/run/consolelogga/consolelogga_pidfile.pid"
+	name="consolelogga"
+	description="consolelogga logs console messages at boot and shutdown"
+
+depend()
+{
+	need udev
+	before udev-trigger udev-settle
+	keyword -stop
+}

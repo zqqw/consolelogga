@@ -1,0 +1,181 @@
+# Hungarian translations for consolelogga package.
+# Copyright (C) 2017 THE consolelogga'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the consolelogga package.
+# Automatically generated, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: consolelogga 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-12-18 02:36+0000\n"
+"PO-Revision-Date: 2017-12-19 03:08+0000\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.4\n"
+
+#: consolelogga.c:111
+msgid ""
+"consolelogga : logs messages from the console at boot or shutdown\n"
+"\n"
+"\n"
+"Default values, # consolelogga (with no options) :\n"
+"Fork to background, no pidfile, console(s) found in /proc/consoles,\n"
+"log to /var/log/consolelogga.log (if it exists)\n"
+"Examples of use:\n"
+"# consolelogga -xp  :  foreground with default pidfile\n"
+"# consolelogga --pidpath=/new/path  :  custom pidfile location\n"
+"# consolelogga -o /new/path  :  custom logfile location\n"
+"# consolelogga -c\"/dev/tty1 /dev/tty2\"  :  write to tty1 & 2\n"
+msgstr ""
+"consolelogga : naplók üzeneteket a konzol a rendszerindító vagy leállás\n"
+"\n"
+"\n"
+"Az alapértelmezett értékek, # consolelogga (opciók nélkül) :\n"
+"A villa háttér, nincs PID fájlt, konzol(ok) megtalálható a /proc/konzolok,\n"
+"napló a /var/log/consolelogga.log (ha létezik)\n"
+"Példák a használatára :\n"
+"# consolelogga -xp  :  előtérben az alapértelmezett PID fájlt\n"
+"# consolelogga --pidpath=/új/útvonal : egyéni PID fájl helye\n"
+"# consolelogga -o /új/útvonal  :  egyéni naplófájl helye\n"
+"# consolelogga -c\"/dev/tty1 /dev/tty2\"  :  írj tty1 & 2\n"
+
+#: consolelogga.c:122
+msgid "consolearg"
+msgstr "konzol érvek"
+
+#: consolelogga.c:122
+msgid "Write to custom console(s)"
+msgstr "Írj egyéni konzol(ok)"
+
+#: consolelogga.c:123
+msgid "Run as a foreground process, don't fork"
+msgstr "Fut, mint egy előtérben folyamat, nem a villát"
+
+#: consolelogga.c:124
+msgid "Write a pidfile to default location"
+msgstr "Írj egy PID fájl alapértelmezett helye"
+
+#: consolelogga.c:125
+msgid "Log messages without a timestamp"
+msgstr "Napló üzenetek dátum nélkül"
+
+#: consolelogga.c:126
+msgid "/path/to/pid"
+msgstr "/út/a/PID"
+
+#: consolelogga.c:126
+msgid "Define pidfile location"
+msgstr "Meghatározza a PID fájl helye"
+
+#: consolelogga.c:127
+msgid "/path/to/log"
+msgstr "/út/a/napló"
+
+#: consolelogga.c:127
+msgid "Define log file location"
+msgstr "Adjuk meg a naplófájl helye"
+
+#: consolelogga.c:314
+msgid "sigaction failure at cleanup"
+msgstr "sigaction hiba a takarítás"
+
+#: consolelogga.c:326
+msgid "xmalloc virtual memory exhausted"
+msgstr "xmalloc virtuális memória kimerült"
+
+#: consolelogga.c:339
+msgid "xrealloc virtual memory exhausted"
+msgstr "xrealloc virtuális memória kimerült"
+
+#: consolelogga.c:359
+msgid "fopen failed to open log_file"
+msgstr "fopen nem sikerült megnyitni log_file"
+
+#: consolelogga.c:404
+msgid "pidfile unlink failed in cleanup"
+msgstr "unlink PID fájl nem sikerült a takarítás"
+
+#: consolelogga.c:413
+msgid "rmdir failed in cleanup"
+msgstr "rmdir nem sikerült a takarítás"
+
+#: consolelogga.c:425
+msgid "Fatal signal not fatal - terminating"
+msgstr "Végzetes jel nem halálos - végződtetési"
+
+#: consolelogga.c:471
+msgid "Fork failed"
+msgstr "Villát nem sikerült"
+
+#: consolelogga.c:481
+msgid "setsid failed"
+msgstr "setsid sikertelen"
+
+#: consolelogga.c:489
+msgid "Second fork failed"
+msgstr "Második sikertelen villa"
+
+#: consolelogga.c:496
+msgid "chdir failed"
+msgstr "chdir sikertelen"
+
+#: consolelogga.c:542
+msgid "Can't open pty - terminal failure"
+msgstr "Nem nyitható meg a pty - terminál meghibásodása"
+
+#: consolelogga.c:550
+msgid "Can't get console output, consolelogga already running?"
+msgstr "Nem konzol kimenetet, consolelogga már fut?"
+
+#: consolelogga.c:555
+msgid "Error redirecting console output to pty slave"
+msgstr "Hiba átirányítása konzol kimenetet pty rabszolga"
+
+#: consolelogga.c:699
+msgid "fopen failed to open pid file"
+msgstr "fopen nem sikerült megnyitni PID fájl"
+
+#: consolelogga.c:765
+msgid "Root isn't a directory"
+msgstr "Gyökér nem könyvtár"
+
+#: consolelogga.c:792
+msgid "Path includes non-directory element"
+msgstr "Az út tartalmazza a nem-könyvtár elem"
+
+#: consolelogga.c:802
+msgid "mkdir - failed to create directory"
+msgstr "mkdir - könyvtár létrehozása sikertelen"
+
+#: consolelogga.c:868
+msgid "fopen failed to open /proc/consoles"
+msgstr "fopen nem sikerült megnyitni /proc/consoles"
+
+#: consolelogga.c:894
+msgid "No consoles found in /proc/consoles"
+msgstr "Nem konzolok megtalálható a /proc/consoles"
+
+#: consolelogga.c:1002
+msgid "Unable to open output tty"
+msgstr "Nem lehet megnyitni a kimeneti tty"
+
+#: consolelogga.c:1010
+msgid "fcntl F_GETFL failed"
+msgstr "fcntl F_GETFL sikertelen"
+
+#: consolelogga.c:1019
+msgid "fcntl F_SETFL failed"
+msgstr "fcntl F_SETFL sikertelen"
+
+#: consolelogga.c:1047
+msgid "time returned -1"
+msgstr "time -1 vissza"
+
+#: consolelogga.c:1052
+msgid "localtime returned NULL"
+msgstr "localtime NULL vissza"

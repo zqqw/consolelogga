@@ -1,0 +1,181 @@
+# Estonian translations for consolelogga package.
+# Copyright (C) 2017 THE consolelogga'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the consolelogga package.
+# Automatically generated, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: consolelogga 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-12-18 02:36+0000\n"
+"PO-Revision-Date: 2017-12-18 13:40+0000\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.4\n"
+
+#: consolelogga.c:111
+msgid ""
+"consolelogga : logs messages from the console at boot or shutdown\n"
+"\n"
+"\n"
+"Default values, # consolelogga (with no options) :\n"
+"Fork to background, no pidfile, console(s) found in /proc/consoles,\n"
+"log to /var/log/consolelogga.log (if it exists)\n"
+"Examples of use:\n"
+"# consolelogga -xp  :  foreground with default pidfile\n"
+"# consolelogga --pidpath=/new/path  :  custom pidfile location\n"
+"# consolelogga -o /new/path  :  custom logfile location\n"
+"# consolelogga -c\"/dev/tty1 /dev/tty2\"  :  write to tty1 & 2\n"
+msgstr ""
+"consolelogga : palkide kirju konsooli alglaadimise või sulgeda\n"
+"\n"
+"\n"
+"Vaikimisi väärtused, # consolelogga (ilma valikud) :\n"
+"Kahvel tausta, ilma PID faili, konsool(s) leida /proc/consoles,\n"
+"logi /var/log/consolelogga.log (kui see on olemas)\n"
+"Näiteid kasutamine:\n"
+"# consolelogga -xp  : esiplaani vaikimisi PID fail\n"
+"# consolelogga --pidpath=/uus/rada  :  kasutaja määratud PID faili asukoht\n"
+"# consolelogga -o /uus/rada  :  kasutaja määratud log faili asukoht\n"
+"# consolelogga -c\"/dev/tty1 /dev/tty2\"  :  kirjutada tty1 & 2\n"
+
+#: consolelogga.c:122
+msgid "consolearg"
+msgstr "konsooli argument"
+
+#: consolelogga.c:122
+msgid "Write to custom console(s)"
+msgstr "Kirjutada kohandatud konsooli(d)"
+
+#: consolelogga.c:123
+msgid "Run as a foreground process, don't fork"
+msgstr "Joosta nii esiplaani protsessi, ei ole kahvel"
+
+#: consolelogga.c:124
+msgid "Write a pidfile to default location"
+msgstr "Kirjutada PID faili vaikimisi asukoht"
+
+#: consolelogga.c:125
+msgid "Log messages without a timestamp"
+msgstr "Logi sõnumeid ilma timestamp"
+
+#: consolelogga.c:126
+msgid "/path/to/pid"
+msgstr "/rada/eest/PID"
+
+#: consolelogga.c:126
+msgid "Define pidfile location"
+msgstr "Määratleda PID faili asukoht"
+
+#: consolelogga.c:127
+msgid "/path/to/log"
+msgstr "/rada/eest/logi"
+
+#: consolelogga.c:127
+msgid "Define log file location"
+msgstr "Määratleda logi faili asukoht"
+
+#: consolelogga.c:314
+msgid "sigaction failure at cleanup"
+msgstr "sigaction ebaedu juures puhastada"
+
+#: consolelogga.c:326
+msgid "xmalloc virtual memory exhausted"
+msgstr "xmalloc virtuaalne mälu kaotanud"
+
+#: consolelogga.c:339
+msgid "xrealloc virtual memory exhausted"
+msgstr "xrealloc virtuaalne mälu kaotanud"
+
+#: consolelogga.c:359
+msgid "fopen failed to open log_file"
+msgstr "fopen ei avanud log_file"
+
+#: consolelogga.c:404
+msgid "pidfile unlink failed in cleanup"
+msgstr "PID faili unlink puhastamata ebaõnnestus"
+
+#: consolelogga.c:413
+msgid "rmdir failed in cleanup"
+msgstr "rmdir puhastamata ebaõnnestus"
+
+#: consolelogga.c:425
+msgid "Fatal signal not fatal - terminating"
+msgstr "Fataalne signaal ei ole saatuslik - lõpetatakse"
+
+#: consolelogga.c:471
+msgid "Fork failed"
+msgstr "Kahvel ei suutnud"
+
+#: consolelogga.c:481
+msgid "setsid failed"
+msgstr "setsid ei suutnud"
+
+#: consolelogga.c:489
+msgid "Second fork failed"
+msgstr "Teine kahvel ei suutnud"
+
+#: consolelogga.c:496
+msgid "chdir failed"
+msgstr "chdir ei suutnud"
+
+#: consolelogga.c:542
+msgid "Can't open pty - terminal failure"
+msgstr "Ei saa avada pty - terminali rikke"
+
+#: consolelogga.c:550
+msgid "Can't get console output, consolelogga already running?"
+msgstr "Ei saa konsooli väljund, consolelogga juba töötab?"
+
+#: consolelogga.c:555
+msgid "Error redirecting console output to pty slave"
+msgstr "Viga suunata konsooli väljundi pty ori"
+
+#: consolelogga.c:699
+msgid "fopen failed to open pid file"
+msgstr "fopen ei avanud PID faili"
+
+#: consolelogga.c:765
+msgid "Root isn't a directory"
+msgstr "Juur ei ole kataloog"
+
+#: consolelogga.c:792
+msgid "Path includes non-directory element"
+msgstr "Tee sisaldab mitte-kataloogi elementi"
+
+#: consolelogga.c:802
+msgid "mkdir - failed to create directory"
+msgstr "mkdir - kataloogi loomine ebaõnnestus"
+
+#: consolelogga.c:868
+msgid "fopen failed to open /proc/consoles"
+msgstr "fopen ei avanud /proc/consoles"
+
+#: consolelogga.c:894
+msgid "No consoles found in /proc/consoles"
+msgstr "Konsoolid /proc/consoles ei leitud"
+
+#: consolelogga.c:1002
+msgid "Unable to open output tty"
+msgstr "Ei saa avada tty väljund"
+
+#: consolelogga.c:1010
+msgid "fcntl F_GETFL failed"
+msgstr "fcntl F_GETFL ei suutnud"
+
+#: consolelogga.c:1019
+msgid "fcntl F_SETFL failed"
+msgstr "fcntl F_SETFL ei suutnud"
+
+#: consolelogga.c:1047
+msgid "time returned -1"
+msgstr "time tagasi -1"
+
+#: consolelogga.c:1052
+msgid "localtime returned NULL"
+msgstr "localtime tagasi NULL"

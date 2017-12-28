@@ -1,0 +1,10 @@
+"/var/log/consolelogga.log"
+
+{
+	rotate 6
+	daily
+	missingok
+	notifempty
+	delaycompress
+	compress
+}

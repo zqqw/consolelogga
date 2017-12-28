@@ -1,0 +1,67 @@
+#! /usr/bin/python
+
+import argparse
+parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+parser.add_argument('--prefix',
+	help='Installation prefix',
+	default='/usr/local')
+parser.add_argument('--logrotatedir',
+	help='logrotate script installation prefix',
+	default='/etc/logrotate.d')
+parser.add_argument('--mandir',
+	help='man file installation prefix',
+	default='/usr/local/share/man/man8')
+parser.add_argument('--compiler',
+	help='Manually set cc compiler',
+	default='DEFAULT')
+parser.add_argument('--no_gettext',
+        action='store_true',
+        help='Compile without gettext')
+parser.add_argument('--no_strip',
+        action='store_true',
+        help='Do not strip the consolelogga binary')
+#norunit
+args = parser.parse_args()
+
+print ("\n  Installation prefix : " + args.prefix)
+print ("  logrotate script prefix : " + args.logrotatedir)
+print ("  man page prefix : " + args.mandir)
+print ("  cc compiler : " + args.compiler)
+if (args.no_gettext == False):
+	print ("  Configured for gettext support")
+else:
+	print ("  Configured to not use gettext")
+if (args.no_strip == False):
+	print ("  Configured to strip the consolelogga binary")
+else:
+	print ("  Configured to not strip the consolelogga binary")
+
+with open('src/consolelogga.h', 'w') as f:
+	f.write("// Generated / overwritten by configure\n")
+	f.write("#define USRPREFIX \"" + (args.prefix) + "\"\n")
+	if (args.no_gettext == False):
+		f.write("#define CONSOLELOGGA_USE_GETTEXT 1\n")
+f.closed
+print ("  Created src/consolelogga.h")
+with open('config_cache.py', 'w') as f:
+	f.write("#!/usr/bin/python\n")
+	f.write("# Generated / overwritten by configure\n")
+	f.write("USRPREFIX = \"" + (args.prefix) + "\"\n")
+	f.write("LOGROTATEDIR = \"" + (args.logrotatedir) + "\"\n")
+	f.write("MANDIR = \"" + (args.mandir) + "\"\n")
+	f.write("CONSOLELOGGA_CC = \"" + (args.compiler) + "\"\n")
+	if (args.no_gettext == False):
+		f.write("CONSOLELOGGA_USE_GETTEXT = 1\n")
+	else:
+		f.write("CONSOLELOGGA_USE_GETTEXT = 0\n")
+	if (args.no_strip == False):
+		f.write("STRIP_CONSOLELOGGA = 1\n")
+	else:
+		f.write("STRIP_CONSOLELOGGA = 0\n")
+f.closed
+print ("  Created config_cache.py")
+
+# Avoid config_cache.pyc being created root:root by sudo scons --install
+import py_compile
+py_compile.compile("config_cache.py")
+print ("  Created config_cache.pyc\n  Configuration completed\n")

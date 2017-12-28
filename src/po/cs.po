@@ -1,0 +1,181 @@
+# Czech translations for consolelogga package.
+# Copyright (C) 2017 THE consolelogga'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the consolelogga package.
+# Automatically generated, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: consolelogga 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-12-18 02:36+0000\n"
+"PO-Revision-Date: 2017-12-18 13:30+0000\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Poedit 2.0.4\n"
+
+#: consolelogga.c:111
+msgid ""
+"consolelogga : logs messages from the console at boot or shutdown\n"
+"\n"
+"\n"
+"Default values, # consolelogga (with no options) :\n"
+"Fork to background, no pidfile, console(s) found in /proc/consoles,\n"
+"log to /var/log/consolelogga.log (if it exists)\n"
+"Examples of use:\n"
+"# consolelogga -xp  :  foreground with default pidfile\n"
+"# consolelogga --pidpath=/new/path  :  custom pidfile location\n"
+"# consolelogga -o /new/path  :  custom logfile location\n"
+"# consolelogga -c\"/dev/tty1 /dev/tty2\"  :  write to tty1 & 2\n"
+msgstr ""
+"consolelogga : protokoly, zprávy z konzole při startu nebo vypnutí\n"
+"\n"
+"\n"
+"Výchozí hodnoty, # consolelogga (bez možnosti) :\n"
+"Vidlička na pozadí, žádný soubor PID, konzole(y) v /proc/consoles,\n"
+"přihlásit se do /var/log/consolelogga.log (pokud existuje)\n"
+"Příklady použití:\n"
+"# consolelogga -xp  :  popředí s výchozí PID soubor\n"
+"# consolelogga --pidpath=/nové/cesta : vlastní PID umístění souboru\n"
+"# consolelogga -o /nové/cesta :  vlastní umístění souboru protokolu\n"
+"# consolelogga -c\"/dev/tty1 /dev/tty2\"  :  napište do tty1 a 2\n"
+
+#: consolelogga.c:122
+msgid "consolearg"
+msgstr "konzole argumenty"
+
+#: consolelogga.c:122
+msgid "Write to custom console(s)"
+msgstr "Napište vlastní konzole(s)"
+
+#: consolelogga.c:123
+msgid "Run as a foreground process, don't fork"
+msgstr "Běží jako proces v popředí, ne vidličku"
+
+#: consolelogga.c:124
+msgid "Write a pidfile to default location"
+msgstr "Napsat PID soubor do výchozího umístění"
+
+#: consolelogga.c:125
+msgid "Log messages without a timestamp"
+msgstr "Zprávy protokolu bez časového razítka"
+
+#: consolelogga.c:126
+msgid "/path/to/pid"
+msgstr "/cesta/k/PID"
+
+#: consolelogga.c:126
+msgid "Define pidfile location"
+msgstr "Definovat umístění souboru PID"
+
+#: consolelogga.c:127
+msgid "/path/to/log"
+msgstr "/cesta/k/protokolu"
+
+#: consolelogga.c:127
+msgid "Define log file location"
+msgstr "Definovat umístění souboru protokolu"
+
+#: consolelogga.c:314
+msgid "sigaction failure at cleanup"
+msgstr "sigaction selhání na vyčištění"
+
+#: consolelogga.c:326
+msgid "xmalloc virtual memory exhausted"
+msgstr "xmalloc virtuální paměť vyčerpána"
+
+#: consolelogga.c:339
+msgid "xrealloc virtual memory exhausted"
+msgstr "xrealloc virtuální paměť vyčerpána"
+
+#: consolelogga.c:359
+msgid "fopen failed to open log_file"
+msgstr "fopen nepodařilo se otevřít log_file"
+
+#: consolelogga.c:404
+msgid "pidfile unlink failed in cleanup"
+msgstr "PID souboru unlink nepodařilo ve vyčištění"
+
+#: consolelogga.c:413
+msgid "rmdir failed in cleanup"
+msgstr "rmdir nepodařilo na vyčištění"
+
+#: consolelogga.c:425
+msgid "Fatal signal not fatal - terminating"
+msgstr "Fatální signál není fatální - ukončení"
+
+#: consolelogga.c:471
+msgid "Fork failed"
+msgstr "Vidlice selhalo"
+
+#: consolelogga.c:481
+msgid "setsid failed"
+msgstr "setsid selhalo"
+
+#: consolelogga.c:489
+msgid "Second fork failed"
+msgstr "Druhý vidlice selhalo"
+
+#: consolelogga.c:496
+msgid "chdir failed"
+msgstr "chdir selhalo"
+
+#: consolelogga.c:542
+msgid "Can't open pty - terminal failure"
+msgstr "Nelze otevřít pty - terminální selhání"
+
+#: consolelogga.c:550
+msgid "Can't get console output, consolelogga already running?"
+msgstr "Nemůže dostat výstup na konzoli, consolelogga již běží?"
+
+#: consolelogga.c:555
+msgid "Error redirecting console output to pty slave"
+msgstr "Chyba přesměrování konzole výstup pty otrok"
+
+#: consolelogga.c:699
+msgid "fopen failed to open pid file"
+msgstr "fopen nepodařilo se otevřít PID soubor"
+
+#: consolelogga.c:765
+msgid "Root isn't a directory"
+msgstr "Root není adresář"
+
+#: consolelogga.c:792
+msgid "Path includes non-directory element"
+msgstr "Cesta zahrnuje non-adresář prvek"
+
+#: consolelogga.c:802
+msgid "mkdir - failed to create directory"
+msgstr "mkdir - nepodařilo se vytvořit adresář"
+
+#: consolelogga.c:868
+msgid "fopen failed to open /proc/consoles"
+msgstr "fopen nepodařilo se otevřít /proc/consoles"
+
+#: consolelogga.c:894
+msgid "No consoles found in /proc/consoles"
+msgstr "Ne konzole našel v souboru /proc/consoles"
+
+#: consolelogga.c:1002
+msgid "Unable to open output tty"
+msgstr "Nelze otevřít výstupní tty"
+
+#: consolelogga.c:1010
+msgid "fcntl F_GETFL failed"
+msgstr "fcntl F_GETFL selhalo"
+
+#: consolelogga.c:1019
+msgid "fcntl F_SETFL failed"
+msgstr "fcntl F_SETFL selhalo"
+
+#: consolelogga.c:1047
+msgid "time returned -1"
+msgstr "time vrácena -1"
+
+#: consolelogga.c:1052
+msgid "localtime returned NULL"
+msgstr "localtime vrácena NULL"
