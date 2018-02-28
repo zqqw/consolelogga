@@ -127,6 +127,12 @@ You need to declare it a conf file to avoid updates overwriting that.
 bootlogd from sysvinit conflicts with consolelogga, don't run both together.
 It's run here as an unmonitored unix daemon fully in the background.
 
+Calculate Linux OpenRC, edit src/scripts/openrc/consolelogga, change :
+#!/usr/bin/openrc-run 
+to :
+#!/sbin/openrc-run
+Then proceed as for Artix
+
 Arch OpenRC / Artix, copy src/scripts/openrc/consolelogga to
 /usr/local/etc/init.d and add any extra consolelogga arguments if desired.
 Add it to the sysinit runlevel:

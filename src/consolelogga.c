@@ -103,7 +103,7 @@ char *pidfilestr = NULL;
 char *consolestr = NULL;
 
 /* Argp global variables */
-const char *argp_program_version = "consolelogga 1.0.0";
+const char *argp_program_version = "consolelogga 1.0.1";
 const char *argp_program_bug_address = "<www.cxperimental.weebly.com>";
 
 /* Argp program documentation */

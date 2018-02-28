@@ -2,7 +2,7 @@
 Import('env')
 env['XGETTEXTFLAGS'] = [
   '--package-name=%s' % 'consolelogga',
-  '--package-version=%s' % '1.0.0',
+  '--package-version=%s' % '1.0.1',
   '-k_',
   '-kN_',
 ]
