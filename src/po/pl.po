@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: consolelogga 1.0.1\n"
+"Project-Id-Version: consolelogga 1.1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-18 02:36+0000\n"
 "PO-Revision-Date: 2017-12-18 13:45+0000\n"

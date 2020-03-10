@@ -38,7 +38,6 @@
 #include <time.h>
 #include <sys/stat.h>
 #include <argp.h>
-#include <sys/stropts.h>
 #include <sys/ioctl.h>
 #include <pty.h>
 #include <ctype.h>
@@ -103,7 +102,7 @@ char *pidfilestr = NULL;
 char *consolestr = NULL;
 
 /* Argp global variables */
-const char *argp_program_version = "consolelogga 1.0.1";
+const char *argp_program_version = "consolelogga 1.1.0";
 const char *argp_program_bug_address = "<www.cxperimental.weebly.com>";
 
 /* Argp program documentation */
@@ -662,16 +661,6 @@ open_pty_pair (int *amaster, int *aslave)
     {
       close (master);
       return (0);
-    }
-  if (isastream (slave))
-    {
-      if (ioctl (slave, I_PUSH, "ptem") < 0
-          || ioctl (slave, I_PUSH, "ldterm") < 0)
-        {
-          close (slave);
-          close (master);
-          return (0);
-        }
     }
   *amaster = master;
   *aslave = slave;
