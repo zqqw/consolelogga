@@ -1,22 +1,22 @@
-# Italian translations for consolelogga package.
-# Copyright (C) 2017 THE consolelogga'S COPYRIGHT HOLDER
+# Portuguese translations for consolelogga package.
+# Copyright (C) 2020 THE consolelogga'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the consolelogga package.
-# Automatically generated, 2017.
+# Automatically generated, 2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: consolelogga 1.1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-03-10 14:51+0000\n"
-"PO-Revision-Date: 2017-12-19 20:53+0000\n"
+"PO-Revision-Date: 2020-03-11 01:04+0000\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
-"Language: it\n"
+"Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.4\n"
+"X-Generator: Poedit 2.3\n"
 
 #: consolelogga.c:110
 msgid ""
@@ -32,155 +32,150 @@ msgid ""
 "# consolelogga -o /new/path  :  custom logfile location\n"
 "# consolelogga -c\"/dev/tty1 /dev/tty2\"  :  write to tty1 & 2\n"
 msgstr ""
-"consolelogga : registra i messaggi dalla console all'avvio o l'arresto di\n"
+"consolelogga : registra mensagens do console na inicialização ou desligamento\\n\"\n"
 "\n"
 "\n"
-"I valori di Default, # consolelogga (senza opzioni) :\n"
-"Forcella in sottofondo, nessun file PID, console(s) che si trova in /proc/"
-"console,\n"
-"log in /var/log/consolelogga.log (se esiste)\n"
-"Esempi di utilizzo:\n"
-"# consolelogga -xp  :  primo piano con di default del file PID\n"
-"# consolelogga --pidpath=/nuovo/percorso : personalizzato il percorso del "
-"file PID\n"
-"# consolelogga -o /nuovo/percorso : personalizzato percorso file di "
-"registro\n"
-"# consolelogga -c\"/dev/tty1 /dev/tty2\"  : scrivere a tty1 & 2\n"
+"Valores padrão, # consolelogga (sem opções) :\n"
+"Forquilha ao fundo, nenhum arquivo pid, console (s) encontrado (s) em /proc/consoles,\n"
+"log para /var/log/consolelogga.log (se existir)\n"
+"Exemplos de uso:\n"
+"# consolelogga -xp  :  primeiro plano com pidfile padrão\n"
+"# consolelogga --pidpath=/novo/caminho  :  local do arquivo pid personalizado\n"
+"# consolelogga -o /novo/caminho  :  local do arquivo de log personalizado\n"
+"# consolelogga -c\\\"/dev/tty1 /dev/tty2\\\"  :  escrever para tty1 & 2\n"
 
 #: consolelogga.c:121
 msgid "consolearg"
-msgstr "console argomento"
+msgstr "argumento"
 
 #: consolelogga.c:121
 msgid "Write to custom console(s)"
-msgstr "Scrivere per console personalizzata(s)"
+msgstr "Escrever no(s) console(s) personalizado(s)"
 
 #: consolelogga.c:122
 msgid "Run as a foreground process, don't fork"
-msgstr "Eseguito come processo in primo piano, non la forcella"
+msgstr "Executar como um processo em primeiro plano, não garfo"
 
 #: consolelogga.c:123
 msgid "Write a pidfile to default location"
-msgstr "Scrivere un file PID di posizione predefinita"
+msgstr "Escreva um arquivo pid no local padrão"
 
 #: consolelogga.c:124
 msgid "Log messages without a timestamp"
-msgstr "I messaggi di Log senza un timestamp"
+msgstr "Registrar mensagens sem um carimbo de data / hora"
 
 #: consolelogga.c:125
 msgid "/path/to/pid"
-msgstr "/il/percorso/PID"
+msgstr "/caminho/para/pid"
 
 #: consolelogga.c:125
 msgid "Define pidfile location"
-msgstr "Definire il percorso del file PID"
+msgstr "Definir localização do arquivo pid"
 
 #: consolelogga.c:126
 msgid "/path/to/log"
-msgstr "/il/percorso/registro"
+msgstr "/caminho/para/log"
 
 #: consolelogga.c:126
 msgid "Define log file location"
-msgstr "Definire il percorso del file registro"
+msgstr "Definir localização do arquivo de log"
 
 #: consolelogga.c:313
 msgid "sigaction failure at cleanup"
-msgstr "sigaction fallimento di pulitura"
+msgstr "falha de sigaction na limpeza"
 
 #: consolelogga.c:325
 msgid "xmalloc virtual memory exhausted"
-msgstr "xmalloc memoria virtuale esaurita"
+msgstr "memória virtual xmalloc esgotada"
 
 #: consolelogga.c:338
 msgid "xrealloc virtual memory exhausted"
-msgstr "xrealloc memoria virtuale esaurita"
+msgstr "memória virtual xrealloc esgotada"
 
 #: consolelogga.c:358
 msgid "fopen failed to open log_file"
-msgstr "fopen impossibile aprire log_file"
+msgstr "fopen falhou ao abrir log_file"
 
 #: consolelogga.c:403
 msgid "pidfile unlink failed in cleanup"
-msgstr "unlink PID file fallito la pulizia"
+msgstr "falha de pidfile unlink na limpeza"
 
 #: consolelogga.c:412
 msgid "rmdir failed in cleanup"
-msgstr "rmdir fallito la pulizia"
+msgstr "falha de rmdir na limpeza"
 
 #: consolelogga.c:424
 msgid "Fatal signal not fatal - terminating"
-msgstr "Segnale fatale e non fatale - fatale"
+msgstr "Sinal fatal não fatal - terminando"
 
 #: consolelogga.c:470
 msgid "Fork failed"
-msgstr "La forcella non è riuscito"
+msgstr "Falha na forquilha"
 
 #: consolelogga.c:480
 msgid "setsid failed"
-msgstr "setsid fallito"
+msgstr "setsid falhou"
 
 #: consolelogga.c:488
 msgid "Second fork failed"
-msgstr "Secondo la forcella non è riuscito"
+msgstr "Segunda bifurcação falhou"
 
 #: consolelogga.c:495
 msgid "chdir failed"
-msgstr "chdir fallito"
+msgstr "chdir falhou"
 
 #: consolelogga.c:541
 msgid "Can't open pty - terminal failure"
-msgstr "Non si può aprire pty - terminale guasto"
+msgstr "Não é possível abrir pty - erro fatal"
 
 #: consolelogga.c:549
 msgid "Can't get console output, consolelogga already running?"
-msgstr ""
-"Non è possibile ottenere l'output della console, consolelogga già in "
-"esecuzione?"
+msgstr "Não é possível obter a saída do console, o consolelogga já está em execução?"
 
 #: consolelogga.c:554
 msgid "Error redirecting console output to pty slave"
-msgstr "Errore di reindirizzare l'output della console pty slave"
+msgstr "Erro ao redirecionar a saída do console para pty slave"
 
 #: consolelogga.c:688
 msgid "fopen failed to open pid file"
-msgstr "fopen impossibile aprire del file PID"
+msgstr "fopen falhou ao abrir o arquivo pid"
 
 #: consolelogga.c:754
 msgid "Root isn't a directory"
-msgstr "Root non è una directory"
+msgstr "Root não é um diretório"
 
 #: consolelogga.c:781
 msgid "Path includes non-directory element"
-msgstr "Il percorso include la non-directory elemento"
+msgstr "O caminho inclui um elemento que não é um diretório"
 
 #: consolelogga.c:791
 msgid "mkdir - failed to create directory"
-msgstr "mkdir: impossibile creare la directory"
+msgstr "mkdir - falha ao criar o diretório"
 
 #: consolelogga.c:857
 msgid "fopen failed to open /proc/consoles"
-msgstr "fopen impossibile aprire /proc/console"
+msgstr "fopen falhou ao abrir /proc/consoles"
 
 #: consolelogga.c:883
 msgid "No consoles found in /proc/consoles"
-msgstr "Non di console si trovano in /proc/consoles"
+msgstr "Nenhum console encontrado em / proc / consoles"
 
 #: consolelogga.c:991
 msgid "Unable to open output tty"
-msgstr "Impossibile aprire uscita tty"
+msgstr "Não foi possível abrir a saída tty"
 
 #: consolelogga.c:999
 msgid "fcntl F_GETFL failed"
-msgstr "fcntl F_GETFL fallito"
+msgstr "fcntl F_GETFL falhou"
 
 #: consolelogga.c:1008
 msgid "fcntl F_SETFL failed"
-msgstr "fcntl F_SETFL fallito"
+msgstr "fcntl F_GETFL falhou"
 
 #: consolelogga.c:1036
 msgid "time returned -1"
-msgstr "time restituito -1"
+msgstr "time retornou -1"
 
 #: consolelogga.c:1041
 msgid "localtime returned NULL"
-msgstr "localtime restituito NULL"
+msgstr "localtime retornou NULL"

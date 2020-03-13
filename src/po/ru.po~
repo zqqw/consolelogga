@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: consolelogga 1.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-10 14:51+0000\n"
+"POT-Creation-Date: 2017-12-18 02:36+0000\n"
 "PO-Revision-Date: 2017-12-18 13:51+0000\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -19,7 +19,7 @@ msgstr ""
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Poedit 2.0.4\n"
 
-#: consolelogga.c:110
+#: consolelogga.c:111
 msgid ""
 "consolelogga : logs messages from the console at boot or shutdown\n"
 "\n"
@@ -47,138 +47,138 @@ msgstr ""
 "# consolelogga -o /new/path  :  пользовательское расположение файла лог\n"
 "# consolelogga -c\"/dev/tty1 /dev/tty2\"  :  написать в tty1 & 2\n"
 
-#: consolelogga.c:121
+#: consolelogga.c:122
 msgid "consolearg"
 msgstr "аргументы консоли"
 
-#: consolelogga.c:121
+#: consolelogga.c:122
 msgid "Write to custom console(s)"
 msgstr "Запись в пользовательскую консоль или консоли"
 
-#: consolelogga.c:122
+#: consolelogga.c:123
 msgid "Run as a foreground process, don't fork"
 msgstr "Запуск как процесс переднего плана, не вилки"
 
-#: consolelogga.c:123
+#: consolelogga.c:124
 msgid "Write a pidfile to default location"
 msgstr "Написать PID-файл в папку по умолчанию"
 
-#: consolelogga.c:124
+#: consolelogga.c:125
 msgid "Log messages without a timestamp"
 msgstr "Сообщения журнала без метки времени"
 
-#: consolelogga.c:125
+#: consolelogga.c:126
 msgid "/path/to/pid"
 msgstr "/путь/к/PID"
 
-#: consolelogga.c:125
+#: consolelogga.c:126
 msgid "Define pidfile location"
 msgstr "Определение расположения файла PID"
 
-#: consolelogga.c:126
+#: consolelogga.c:127
 msgid "/path/to/log"
 msgstr "/путь/к/лог"
 
-#: consolelogga.c:126
+#: consolelogga.c:127
 msgid "Define log file location"
 msgstr "Определение расположения файла лог"
 
-#: consolelogga.c:313
+#: consolelogga.c:314
 msgid "sigaction failure at cleanup"
 msgstr "отказ в sigaction в уборке"
 
-#: consolelogga.c:325
+#: consolelogga.c:326
 msgid "xmalloc virtual memory exhausted"
 msgstr "xmalloc виртуальная память исчерпана"
 
-#: consolelogga.c:338
+#: consolelogga.c:339
 msgid "xrealloc virtual memory exhausted"
 msgstr "xrealloc виртуальная память исчерпана"
 
-#: consolelogga.c:358
+#: consolelogga.c:359
 msgid "fopen failed to open log_file"
 msgstr "fopen не удалось открыть log_file"
 
-#: consolelogga.c:403
+#: consolelogga.c:404
 msgid "pidfile unlink failed in cleanup"
 msgstr "unlink файла PID не удалось очистить"
 
-#: consolelogga.c:412
+#: consolelogga.c:413
 msgid "rmdir failed in cleanup"
 msgstr "rmdir не удалось очистить"
 
-#: consolelogga.c:424
+#: consolelogga.c:425
 msgid "Fatal signal not fatal - terminating"
 msgstr "Фатальный сигнал не смертельный - прекращается"
 
-#: consolelogga.c:470
+#: consolelogga.c:471
 msgid "Fork failed"
 msgstr "Вилка не удалась"
 
-#: consolelogga.c:480
+#: consolelogga.c:481
 msgid "setsid failed"
 msgstr "setsid не удалась"
 
-#: consolelogga.c:488
+#: consolelogga.c:489
 msgid "Second fork failed"
 msgstr "Вторая вилка не удалась"
 
-#: consolelogga.c:495
+#: consolelogga.c:496
 msgid "chdir failed"
 msgstr "chdir не удалась"
 
-#: consolelogga.c:541
+#: consolelogga.c:542
 msgid "Can't open pty - terminal failure"
 msgstr "Не удается открыть pty - терминал сбой"
 
-#: consolelogga.c:549
+#: consolelogga.c:550
 msgid "Can't get console output, consolelogga already running?"
 msgstr "Не удается получить консольный выход, consolelogga уже запущена?"
 
-#: consolelogga.c:554
+#: consolelogga.c:555
 msgid "Error redirecting console output to pty slave"
 msgstr "Ошибка перенаправления выхода консоли в ведомое устройство Pty"
 
-#: consolelogga.c:688
+#: consolelogga.c:699
 msgid "fopen failed to open pid file"
 msgstr "fopen не удалось открыть файл PID"
 
-#: consolelogga.c:754
+#: consolelogga.c:765
 msgid "Root isn't a directory"
 msgstr "Корень не каталог"
 
-#: consolelogga.c:781
+#: consolelogga.c:792
 msgid "Path includes non-directory element"
 msgstr "Путь включает элемент, не относящийся к каталогу"
 
-#: consolelogga.c:791
+#: consolelogga.c:802
 msgid "mkdir - failed to create directory"
 msgstr "mkdir-не удалось создать каталог"
 
-#: consolelogga.c:857
+#: consolelogga.c:868
 msgid "fopen failed to open /proc/consoles"
 msgstr "fopen не удалось открыть /proc/consoles"
 
-#: consolelogga.c:883
+#: consolelogga.c:894
 msgid "No consoles found in /proc/consoles"
 msgstr "Консолей не найдено в /proc/consoles"
 
-#: consolelogga.c:991
+#: consolelogga.c:1002
 msgid "Unable to open output tty"
 msgstr "Не удалось открыть выходной телетайп"
 
-#: consolelogga.c:999
+#: consolelogga.c:1010
 msgid "fcntl F_GETFL failed"
 msgstr "fcntl F_GETFL не удалась"
 
-#: consolelogga.c:1008
+#: consolelogga.c:1019
 msgid "fcntl F_SETFL failed"
 msgstr "fcntl F_SETFL не удалась"
 
-#: consolelogga.c:1036
+#: consolelogga.c:1047
 msgid "time returned -1"
 msgstr "time возвращает значение -1"
 
-#: consolelogga.c:1041
+#: consolelogga.c:1052
 msgid "localtime returned NULL"
 msgstr "localtime возвращает значение NULL"

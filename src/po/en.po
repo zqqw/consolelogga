@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: consolelogga 1.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-18 02:36+0000\n"
+"POT-Creation-Date: 2020-03-10 14:51+0000\n"
 "PO-Revision-Date: 2017-09-20 01:57+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 2.0.3\n"
 
-#: consolelogga.c:111
+#: consolelogga.c:110
 msgid ""
 "consolelogga : logs messages from the console at boot or shutdown\n"
 "\n"
@@ -33,138 +33,138 @@ msgid ""
 "# consolelogga -c\"/dev/tty1 /dev/tty2\"  :  write to tty1 & 2\n"
 msgstr ""
 
-#: consolelogga.c:122
+#: consolelogga.c:121
 msgid "consolearg"
 msgstr ""
 
-#: consolelogga.c:122
+#: consolelogga.c:121
 msgid "Write to custom console(s)"
 msgstr ""
 
-#: consolelogga.c:123
+#: consolelogga.c:122
 msgid "Run as a foreground process, don't fork"
 msgstr ""
 
-#: consolelogga.c:124
+#: consolelogga.c:123
 msgid "Write a pidfile to default location"
 msgstr ""
 
-#: consolelogga.c:125
+#: consolelogga.c:124
 msgid "Log messages without a timestamp"
 msgstr ""
 
-#: consolelogga.c:126
+#: consolelogga.c:125
 msgid "/path/to/pid"
 msgstr ""
 
-#: consolelogga.c:126
+#: consolelogga.c:125
 msgid "Define pidfile location"
 msgstr ""
 
-#: consolelogga.c:127
+#: consolelogga.c:126
 msgid "/path/to/log"
 msgstr ""
 
-#: consolelogga.c:127
+#: consolelogga.c:126
 msgid "Define log file location"
 msgstr ""
 
-#: consolelogga.c:314
+#: consolelogga.c:313
 msgid "sigaction failure at cleanup"
 msgstr ""
 
-#: consolelogga.c:326
+#: consolelogga.c:325
 msgid "xmalloc virtual memory exhausted"
 msgstr ""
 
-#: consolelogga.c:339
+#: consolelogga.c:338
 msgid "xrealloc virtual memory exhausted"
 msgstr ""
 
-#: consolelogga.c:359
+#: consolelogga.c:358
 msgid "fopen failed to open log_file"
 msgstr ""
 
-#: consolelogga.c:404
+#: consolelogga.c:403
 msgid "pidfile unlink failed in cleanup"
 msgstr ""
 
-#: consolelogga.c:413
+#: consolelogga.c:412
 msgid "rmdir failed in cleanup"
 msgstr ""
 
-#: consolelogga.c:425
+#: consolelogga.c:424
 msgid "Fatal signal not fatal - terminating"
 msgstr ""
 
-#: consolelogga.c:471
+#: consolelogga.c:470
 msgid "Fork failed"
 msgstr ""
 
-#: consolelogga.c:481
+#: consolelogga.c:480
 msgid "setsid failed"
 msgstr ""
 
-#: consolelogga.c:489
+#: consolelogga.c:488
 msgid "Second fork failed"
 msgstr ""
 
-#: consolelogga.c:496
+#: consolelogga.c:495
 msgid "chdir failed"
 msgstr ""
 
-#: consolelogga.c:542
+#: consolelogga.c:541
 msgid "Can't open pty - terminal failure"
 msgstr ""
 
-#: consolelogga.c:550
+#: consolelogga.c:549
 msgid "Can't get console output, consolelogga already running?"
 msgstr ""
 
-#: consolelogga.c:555
+#: consolelogga.c:554
 msgid "Error redirecting console output to pty slave"
 msgstr ""
 
-#: consolelogga.c:699
+#: consolelogga.c:688
 msgid "fopen failed to open pid file"
 msgstr ""
 
-#: consolelogga.c:765
+#: consolelogga.c:754
 msgid "Root isn't a directory"
 msgstr ""
 
-#: consolelogga.c:792
+#: consolelogga.c:781
 msgid "Path includes non-directory element"
 msgstr ""
 
-#: consolelogga.c:802
+#: consolelogga.c:791
 msgid "mkdir - failed to create directory"
 msgstr ""
 
-#: consolelogga.c:868
+#: consolelogga.c:857
 msgid "fopen failed to open /proc/consoles"
 msgstr ""
 
-#: consolelogga.c:894
+#: consolelogga.c:883
 msgid "No consoles found in /proc/consoles"
 msgstr ""
 
-#: consolelogga.c:1002
+#: consolelogga.c:991
 msgid "Unable to open output tty"
 msgstr ""
 
-#: consolelogga.c:1010
+#: consolelogga.c:999
 msgid "fcntl F_GETFL failed"
 msgstr ""
 
-#: consolelogga.c:1019
+#: consolelogga.c:1008
 msgid "fcntl F_SETFL failed"
 msgstr ""
 
-#: consolelogga.c:1047
+#: consolelogga.c:1036
 msgid "time returned -1"
 msgstr ""
 
-#: consolelogga.c:1052
+#: consolelogga.c:1041
 msgid "localtime returned NULL"
 msgstr ""

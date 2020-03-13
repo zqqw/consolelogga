@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: consolelogga 1.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-10 14:51+0000\n"
+"POT-Creation-Date: 2017-12-18 02:36+0000\n"
 "PO-Revision-Date: 2017-12-20 20:20+0000\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 2.0.4\n"
 
-#: consolelogga.c:110
+#: consolelogga.c:111
 msgid ""
 "consolelogga : logs messages from the console at boot or shutdown\n"
 "\n"
@@ -36,8 +36,7 @@ msgstr ""
 "\n"
 "\n"
 "Standaard waarden, # consolelogga (zonder opties) :\n"
-"Vork op de achtergrond, geen PID-bestand, en de console(s) van /proc/"
-"consoles,\n"
+"Vork op de achtergrond, geen PID-bestand, en de console(s) van /proc/consoles,\n"
 "loggen naar /var/log/consolelogga.log in (als dit bestaat)\n"
 "Voorbeelden van gebruik:\n"
 "# consolelogga -xp  :  voorgrond met standaard PID-bestand\n"
@@ -45,138 +44,138 @@ msgstr ""
 "# consolelogga -o /nieuwe/pad  :  aangepast log bestand locatie\n"
 "# consolelogga -c\"/dev/tty1 /dev/tty2\"  :  schrijven tty1 & 2\n"
 
-#: consolelogga.c:121
+#: consolelogga.c:122
 msgid "consolearg"
 msgstr "consolearg"
 
-#: consolelogga.c:121
+#: consolelogga.c:122
 msgid "Write to custom console(s)"
 msgstr "Schrijf aangepaste console(s)"
 
-#: consolelogga.c:122
+#: consolelogga.c:123
 msgid "Run as a foreground process, don't fork"
 msgstr "Als een voorgrond proces, niet voorvork"
 
-#: consolelogga.c:123
+#: consolelogga.c:124
 msgid "Write a pidfile to default location"
 msgstr "Het schrijven van een PID-bestand naar de standaard locatie"
 
-#: consolelogga.c:124
+#: consolelogga.c:125
 msgid "Log messages without a timestamp"
 msgstr "Log berichten zonder een tijdstempel"
 
-#: consolelogga.c:125
+#: consolelogga.c:126
 msgid "/path/to/pid"
 msgstr "/pad/naar/PID"
 
-#: consolelogga.c:125
+#: consolelogga.c:126
 msgid "Define pidfile location"
 msgstr "Het definiëren van de PID-bestand locatie"
 
-#: consolelogga.c:126
+#: consolelogga.c:127
 msgid "/path/to/log"
 msgstr "/pad/naar/log"
 
-#: consolelogga.c:126
+#: consolelogga.c:127
 msgid "Define log file location"
 msgstr "Het definiëren van de log-bestand locatie"
 
-#: consolelogga.c:313
+#: consolelogga.c:314
 msgid "sigaction failure at cleanup"
 msgstr "sigaction fout op opruiming"
 
-#: consolelogga.c:325
+#: consolelogga.c:326
 msgid "xmalloc virtual memory exhausted"
 msgstr "xmalloc virtueel geheugen is uitgeput"
 
-#: consolelogga.c:338
+#: consolelogga.c:339
 msgid "xrealloc virtual memory exhausted"
 msgstr "xrealloc virtueel geheugen is uitgeput"
 
-#: consolelogga.c:358
+#: consolelogga.c:359
 msgid "fopen failed to open log_file"
 msgstr "fopen niet openen log_file"
 
-#: consolelogga.c:403
+#: consolelogga.c:404
 msgid "pidfile unlink failed in cleanup"
 msgstr "unlink PID-bestand is mislukt in de opruiming"
 
-#: consolelogga.c:412
+#: consolelogga.c:413
 msgid "rmdir failed in cleanup"
 msgstr "rmdir is mislukt in de opruiming"
 
-#: consolelogga.c:424
+#: consolelogga.c:425
 msgid "Fatal signal not fatal - terminating"
 msgstr "Fatale signaal niet fatale - terminating"
 
-#: consolelogga.c:470
+#: consolelogga.c:471
 msgid "Fork failed"
 msgstr "Vork is mislukt"
 
-#: consolelogga.c:480
+#: consolelogga.c:481
 msgid "setsid failed"
 msgstr "setsid mislukt"
 
-#: consolelogga.c:488
+#: consolelogga.c:489
 msgid "Second fork failed"
 msgstr "Tweede vork mislukt"
 
-#: consolelogga.c:495
+#: consolelogga.c:496
 msgid "chdir failed"
 msgstr "chdir mislukt"
 
-#: consolelogga.c:541
+#: consolelogga.c:542
 msgid "Can't open pty - terminal failure"
 msgstr "Kan het niet openen van pty - aansluiting storing"
 
-#: consolelogga.c:549
+#: consolelogga.c:550
 msgid "Can't get console output, consolelogga already running?"
 msgstr "Kan het niet krijgen console-uitvoer, consolelogga al uitgevoerd?"
 
-#: consolelogga.c:554
+#: consolelogga.c:555
 msgid "Error redirecting console output to pty slave"
 msgstr "Fout ombuigen van de console-uitvoer naar pty slaaf"
 
-#: consolelogga.c:688
+#: consolelogga.c:699
 msgid "fopen failed to open pid file"
 msgstr "fopen niet open PID-bestand"
 
-#: consolelogga.c:754
+#: consolelogga.c:765
 msgid "Root isn't a directory"
 msgstr "Root is geen directory"
 
-#: consolelogga.c:781
+#: consolelogga.c:792
 msgid "Path includes non-directory element"
 msgstr "Path bestaat niet-directory element"
 
-#: consolelogga.c:791
+#: consolelogga.c:802
 msgid "mkdir - failed to create directory"
 msgstr "mkdir - maken van map mislukt"
 
-#: consolelogga.c:857
+#: consolelogga.c:868
 msgid "fopen failed to open /proc/consoles"
 msgstr "fopen niet open /proc/consoles"
 
-#: consolelogga.c:883
+#: consolelogga.c:894
 msgid "No consoles found in /proc/consoles"
 msgstr "Geen consoles te vinden in /proc/consoles"
 
-#: consolelogga.c:991
+#: consolelogga.c:1002
 msgid "Unable to open output tty"
 msgstr "Kan niet openen van tty-uitgang"
 
-#: consolelogga.c:999
+#: consolelogga.c:1010
 msgid "fcntl F_GETFL failed"
 msgstr "fcntl F_GETFL mislukt"
 
-#: consolelogga.c:1008
+#: consolelogga.c:1019
 msgid "fcntl F_SETFL failed"
 msgstr "fcntl F_SETFL mislukt"
 
-#: consolelogga.c:1036
+#: consolelogga.c:1047
 msgid "time returned -1"
 msgstr "time geretourneerd -1"
 
-#: consolelogga.c:1041
+#: consolelogga.c:1052
 msgid "localtime returned NULL"
 msgstr "localtime geretourneerd -1"

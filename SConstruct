@@ -56,4 +56,5 @@ if (env.GetOption('install')) or (env.GetOption('uninstall')):
 		Default(env.InstallAs([USRPREFIX + "/share/locale/it/LC_MESSAGES/consolelogga.mo"], ["src/po/it.mo"]))
 		Default(env.InstallAs([USRPREFIX + "/share/locale/nl/LC_MESSAGES/consolelogga.mo"], ["src/po/nl.mo"]))
 		Default(env.InstallAs([USRPREFIX + "/share/locale/pl/LC_MESSAGES/consolelogga.mo"], ["src/po/pl.mo"]))
+		Default(env.InstallAs([USRPREFIX + "/share/locale/pt/LC_MESSAGES/consolelogga.mo"], ["src/po/pt.mo"]))
 		Default(env.InstallAs([USRPREFIX + "/share/locale/ru/LC_MESSAGES/consolelogga.mo"], ["src/po/ru.mo"]))
